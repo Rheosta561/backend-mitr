@@ -31,6 +31,9 @@ const generate = async (prompt) => {
   
 
 // endpoint model 
+app.get("/about",(req,res)=>{
+  res.send("About");
+})
 app.post("/model", async (req, res) => {
   const { prompt } = req.body;
 
